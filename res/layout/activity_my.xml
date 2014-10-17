@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity"
+    android:id="@+id/main_frame"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/horizontal_scroll_view"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <LinearLayout
+                android:id="@+id/horizontal_view"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp" />
+                    <CheckBox
+                        android:layout_width="100dp"
+                        android:layout_height="30dp" />
+                    </LinearLayout>  !-->
+                
+                </LinearLayout>
+            
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/horizontal_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/planets_container">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/planets_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/vote_frame"
+        android:background="@color/black">
+    </RelativeLayout>
+
+</RelativeLayout>
